@@ -22,11 +22,15 @@ const Home = () => {
         <Map />
         <h1 className="head_text text-center">What is this? And why am I doing this?</h1>
         <br className="max-md:hidden"/>
-        <p className="desc tex-center">This are probabley the questions i do myself everytime i open this project... 
-          And I'm still not sure why. My family owns some Ha. in Algarve near Vila do Bispo.
-          For years we have been trying to sell the land, but it's been dificult, mostly because it's very hard to get an aproval to build in the area. 
-          It's also very unfair because right next to the land there is a wind farm.
-          That being said I believe it's possible to do something with that much space, we only need capital and a viable idea to build something useful and maybe unique and hopefully profitable.
+        <p className="desc tex-center">
+          These are questions I ask myself every time I work on this project... 
+          <br />
+          My family owns about 165 hectares in the Algarve, near Vila do Bispo.
+          <br />
+          For many years we have been trying to sell the land, but it is difficult because it is complicated to get building permits and we have no capital to invest.
+          <br />
+          Most of the land is only allowed to be farmed, with a few exceptions.
+          Having said this, I believe there is something that can be done with the land, we just need ideas and capital to get started. And that is the goal of this project.
         </p>
     </section>
   )
