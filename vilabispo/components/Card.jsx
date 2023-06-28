@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
+import avatar from '@public/assets/images/avatar.png';
 
 const Card = ({ post, handleTagClick }) => {
 
@@ -20,10 +21,13 @@ const Card = ({ post, handleTagClick }) => {
   return (
     <div className='prompt_card'>
       <div className='flex justify-between items-start gap-5'>
-
-        <div className='copy_btn' onClick={handleCopy}>
-         
-        </div>
+        <Image
+            src={avatar}
+            alt='user_image'
+            width={40}
+            height={40}
+            className='rounded-full object-contain'
+          />
       </div>
 
       <p className='my-4 font-satoshi text-sm text-gray-700'>{post.prompt}</p>
