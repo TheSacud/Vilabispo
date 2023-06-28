@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 
 import Form  from '@components/Form';
+import Idea from '@components/Idea';
 
 
 const Ideas = () => {
@@ -33,13 +34,17 @@ const Ideas = () => {
   };
 
   return (
-    <Form
-      type="Ideas"
-      post={post}
-      setPost={setPost}
-      submit={submit}
-      handleSubmit={createPrompt}
-    />
+    <>
+      <Form
+        type="Ideas"
+        post={post}
+        setPost={setPost}
+        submit={submit}
+        handleSubmit={createPrompt}
+      />
+      <Idea />
+    </>
+    
   );
 };
 
